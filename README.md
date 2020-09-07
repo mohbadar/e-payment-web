@@ -1,2 +1,2 @@
-### Client Side UI for eBreshna Enterprise System - https://github.com/nsia-infosys/eBreshna
+### Client Side UI for e-payment Enterprise System - https://github.com/nsia-infosys/e-payment
 
