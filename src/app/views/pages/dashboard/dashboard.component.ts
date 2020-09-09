@@ -50,32 +50,38 @@ export class DashboardComponent implements OnInit, OnDestroy, AfterViewInit {
     {
       id: 1,
       name: "Roshan",
-      translate: "SERVICE.MMO.ROSHAN",
+      translate: "MMO.ROSHAN",
       icon: "roshan.png",
     },
     {
       id: 2,
       name: "Etisalat",
-      translate: "SERVICE.MMO.ROSHAN",
+      translate: "MMO.ROSHAN",
       icon: "etisalat.png",
     },
     {
       id: 3,
       name: "MTN",
-      translate: "SERVICE.MMO.ROSHAN",
+      translate: "MMO.ROSHAN",
       icon: "mtn.png",
     },
     {
       id: 4,
       name: "AWCC",
-      translate: "SERVICE.MMO.ROSHAN",
+      translate: "MMO.ROSHAN",
       icon: "awcc.png",
     },
     {
       id: 5,
       name: "Salaam",
-      translate: "MSERVICE.MMO.ROSHAN",
+      translate: "MMO.ROSHAN",
       icon: "salaam.png",
+    },
+    {
+      id: 6,
+      name: "APS",
+      translate: "MMO.ROSHAN",
+      icon: "bank/aps.png",
     },
     // {
     //     id: 7,
