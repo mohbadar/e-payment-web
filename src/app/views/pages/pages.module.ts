@@ -1,23 +1,24 @@
 // Angular
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 // Partials
-import { PartialsModule } from '../partials/partials.module';
+import { PartialsModule } from "../partials/partials.module";
 // Pages
-import { CoreModule } from '../../core/core.module';
+import { CoreModule } from "../../core/core.module";
+import { TranslateModule } from "@ngx-translate/core";
 @NgModule({
-    declarations: [],
-    exports: [],
-    imports: [
-        CommonModule,
-        HttpClientModule,
-        FormsModule,
-        CoreModule,
-        PartialsModule
-    ],
-    providers: []
+  declarations: [],
+  exports: [],
+  imports: [
+    CommonModule,
+    HttpClientModule,
+    FormsModule,
+    CoreModule,
+    PartialsModule,
+    TranslateModule,
+  ],
+  providers: [],
 })
-export class PagesModule {
-}
+export class PagesModule {}
