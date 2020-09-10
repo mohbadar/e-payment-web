@@ -56,45 +56,124 @@ export class DashboardComponent implements OnInit, OnDestroy, AfterViewInit {
     {
       id: 2,
       name: "Etisalat",
-      translate: "MMO.ROSHAN",
+      translate: "MMO.ETISALAT",
       icon: "etisalat.png",
     },
     {
       id: 3,
       name: "MTN",
-      translate: "MMO.ROSHAN",
+      translate: "MMO.MTN",
       icon: "mtn.png",
     },
     {
       id: 4,
       name: "AWCC",
-      translate: "MMO.ROSHAN",
+      translate: "MMO.AWCC",
       icon: "awcc.png",
     },
     {
       id: 5,
       name: "Salaam",
-      translate: "MMO.ROSHAN",
+      translate: "MMO.SALAAM",
       icon: "salaam.png",
     },
     {
       id: 6,
       name: "APS",
-      translate: "MMO.ROSHAN",
+      translate: "MMO.APS",
       icon: "bank/aps.png",
     },
+  ];
+
+  banks = [
+    {
+      id: 1,
+      name: "APS",
+      translate: "MMO.APS",
+      icon: "bank/aps.png",
+    },
+    {
+      id: 2,
+      name: "Azizi Bank",
+      translate: "MMO.AZIZI",
+      icon: "bank/azizi.png",
+    },
+    {
+      id: 3,
+      name: "CSC",
+      translate: "MMO.CSC",
+      icon: "bank/csc.png",
+    },
+    {
+      id: 4,
+      name: "Master Card",
+      translate: "MMO.MASTERCARD",
+      icon: "bank/mastercard.png",
+    },
+    {
+      id: 5,
+      name: "Paypal",
+      translate: "MMO.PAYPAL",
+      icon: "bank/paypal.png",
+    },
+    {
+      id: 6,
+      name: "BPC",
+      translate: "MMO.BPC",
+      icon: "bank/pbc.png",
+    },
+
+    {
+      id: 7,
+      name: "Stripe",
+      translate: "MMO.STRIPE",
+      icon: "bank/stripe.png",
+    },
+  ];
+
+  orgs = [
+    {
+      id: 1,
+      name: "Universities",
+      translate: "MMO.UNIVERSITIES",
+      icon: "logos/logo-7.png",
+    },
+    {
+      id: 2,
+      name: "Government",
+      translate: "MMO.GOVERNMENT",
+      icon: "logos/logo-4.png",
+    },
+    {
+      id: 3,
+      name: "Utiltiy Bills",
+      translate: "MMO.UTILITY_BILLS",
+      icon: "logos/logo-3.png",
+    },
+    {
+      id: 4,
+      name: "Merchants",
+      translate: "MMO.Merchants",
+      icon: "logos/logo-2.png",
+    },
+    {
+      id: 5,
+      name: "Donation",
+      translate: "MMO.DONATION",
+      icon: "logos/logo-2.png",
+    },
+    {
+      id: 6,
+      name: "Private Sector",
+      translate: "MMO.PRIVATE_SECTOR",
+      icon: "logos/logo-2.png",
+    },
+
     // {
-    //     id: 7,
-    //     name: 'Energy Audit System',
-    //     icon: 'eAudit.svg',
-    //     link: '/energy-audit',
-    //     translate: 'MENU.ENERGY_AUDIT_SYSTEM'
-    // },
-    // {
-    //   id: 8,
-    //   name: "Help Desk",
-    //   translate: "MENU.HELPDESK.MODULE_NAME",
-    //   icon: "eHelpdesk.svg",
+    //   id: 7,
+    //   name: "",
+    //   translate: "MMO.STRIPE",
+    //   icon: "bank/stripe.png",
     // },
   ];
 
