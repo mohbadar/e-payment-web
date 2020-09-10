@@ -1,0 +1,138 @@
+<div class="kt-portlet">
+  <div class="kt-portlet__head">
+    <div class="kt-portlet__head-caption">
+      <div class="kt-portlet__head-title">
+        <span class="kt-portlet__head-icon kt-hide">
+          <i class="la la-gear"></i>
+        </span>
+        <h3 class="kt-portlet__head-text">
+          {{ "MMO.LAUNCH_SERVICE" | translate }}
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+      <!--begin::Form-->
+      <form class="kt-form" [formGroup]="form" (ngSubmit)="submit()">
+        <div class="kt-portlet__body">
+          <div class="kt-form__section kt-form__section--first">
+            <div class="form-group kt-form__group row required">
+              <label class="col-lg-4 col-form-label">{{
+                "M.SERVICE_PROVIDER" | translate
+              }}</label>
+              <div class="col-lg-8">
+                <input
+                  type="text"
+                  class="form-control"
+                  [placeholder]="'M.SERVICE_PROVIDER' | translate"
+                  formControlName="serviceProvider"
+                  readonly
+                />
+                <print-error
+                  [control]="form.get('serviceProvider')"
+                ></print-error>
+              </div>
+            </div>
+          </div>
+
+          <div class="kt-form__section kt-form__section--first">
+            <div class="form-group kt-form__group row required">
+              <label class="col-lg-4 col-form-label">{{
+                "M.SERVICE_NAME" | translate
+              }}</label>
+              <div class="col-lg-8">
+                <input
+                  type="text"
+                  class="form-control"
+                  [placeholder]="'M.SERVICE_NAME' | translate"
+                  formControlName="serviceName"
+                  readonly
+                />
+                <print-error [control]="form.get('serviceName')"></print-error>
+              </div>
+            </div>
+          </div>
+
+          <div class="kt-form__section kt-form__section--first">
+            <div class="form-group kt-form__group row required">
+              <label class="col-lg-4 col-form-label">{{
+                "M.SOURCE_PHONE_NUMBER" | translate
+              }}</label>
+              <div class="col-lg-8">
+                <input
+                  type="text"
+                  class="form-control"
+                  [placeholder]="'M.SOURCE_PHONE_NUMBER' | translate"
+                  formControlName="sourceNumber"
+                  readonly
+                />
+                <print-error [control]="form.get('sourceNumber')"></print-error>
+              </div>
+            </div>
+          </div>
+
+          <div class="kt-form__section kt-form__section--first">
+            <div class="form-group kt-form__group row required">
+              <label class="col-lg-4 col-form-label">{{
+                "M.DESTINATION_PHONE_NUMBER" | translate
+              }}</label>
+              <div class="col-lg-8">
+                <input
+                  type="text"
+                  class="form-control"
+                  [placeholder]="'M.DESTINATION_PHONE_NUMBER' | translate"
+                  formControlName="destinationNumber"
+                  readonly
+                />
+                <print-error
+                  [control]="form.get('destinationNumber')"
+                ></print-error>
+              </div>
+            </div>
+          </div>
+
+          <div class="kt-form__section kt-form__section--first">
+            <div class="form-group kt-form__group row required">
+              <label class="col-lg-4 col-form-label">{{
+                "M.AMOUNT" | translate
+              }}</label>
+              <div class="col-lg-8">
+                <input
+                  type="text"
+                  class="form-control"
+                  [placeholder]="'M.AMOUNT' | translate"
+                  formControlName="amount"
+                  readonly
+                />
+                <print-error [control]="form.get('amount')"></print-error>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="kt-portlet__foot">
+          <div class="kt-form__actions kt-form__actions">
+            <div class="row justify-content-center">
+              <button
+                [disabled]="form.invalid"
+                type="submit"
+                class="btn btn-primary btn-md btn-tall btn-wide kt-font-bold kt-font-transform-u"
+              >
+                {{ "SAVE" | translate }}</button
+              >&nbsp;
+              <button
+                (click)="routeHome()"
+                type="button"
+                class="btn btn-secondary btn-md btn-tall btn-wide kt-font-bold kt-font-transform-u"
+              >
+                {{ "BACK" | translate }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <!--end::Form-->
+    </div>
+  </div>
+</div>

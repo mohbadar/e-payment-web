@@ -37,6 +37,9 @@ import {
   MatTooltipModule,
   MatDialogModule,
 } from "@angular/material";
+import { LaunchMmoServiceComponent } from "./components/launch-mmo-service/launch-mmo-service.component";
+import { NgSelectModule } from "@ng-select/ng-select";
+import { ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   imports: [
@@ -48,6 +51,10 @@ import {
       {
         path: "",
         component: DashboardComponent,
+      },
+      {
+        path: "launch-mmo-service",
+        component: LaunchMmoServiceComponent,
       },
     ]),
 
@@ -77,9 +84,16 @@ import {
     MatTabsModule,
     MatTooltipModule,
     MatDialogModule,
+    TranslateModule,
+    NgSelectModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  declarations: [DashboardComponent, ServiceSelectionComponent],
+  declarations: [
+    DashboardComponent,
+    ServiceSelectionComponent,
+    LaunchMmoServiceComponent,
+  ],
   entryComponents: [ServiceSelectionComponent],
 })
 export class DashboardModule {}

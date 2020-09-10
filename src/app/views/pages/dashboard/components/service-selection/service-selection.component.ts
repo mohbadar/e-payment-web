@@ -1,5 +1,7 @@
 import { Component, OnInit, Inject } from "@angular/core";
 import { MatDialogRef, MAT_DIALOG_DATA } from "@angular/material";
+import { DataExchangeService } from "app/core/service/data.exchange.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "kt-service-selection",
@@ -10,6 +12,8 @@ export class ServiceSelectionComponent implements OnInit {
   item: any;
   loadingAfterSubmit;
   viewLoading;
+
+  route = "/launch-mmo-service";
 
   services = [
     {
@@ -34,7 +38,9 @@ export class ServiceSelectionComponent implements OnInit {
 
   constructor(
     private dialogRef: MatDialogRef<ServiceSelectionComponent>,
-    @Inject(MAT_DIALOG_DATA) private data: any
+    @Inject(MAT_DIALOG_DATA) private data: any,
+    private dataExchangeService: DataExchangeService,
+    private router: Router
   ) {
     this.item = data.item;
   }
@@ -49,5 +55,9 @@ export class ServiceSelectionComponent implements OnInit {
       service: selectedService,
     };
     console.log("launch item", item);
+
+    this.dataExchangeService.changeData(item);
+    this.router.navigate([`${this.route}`]);
+    this.dialogRef.close();
   }
 }
